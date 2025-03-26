@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    Jay Shree Radhe Radhe
-</body>
+    <style>
+        .header{
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            
+        }
+      aside {
+        background-color: rgb(227, 224, 230);
+        margin: 5px;
+        border: 0.5px solid rgb(148, 147, 147);
+        
+      }
+      section {
+        background-color: whitesmoke;
+        width: 100%;
+        height: 90%;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .container {
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        width: 100%;
+        height: 700px;
+      }
+      .box {
+        background-color: rgb(233, 233, 237);
+        height: 20%;
+        border: 0.5px solid rgb(148, 147, 147);
+        
+       
+      }
+      .mycont{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+      }
+      .box-1{
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px;
+        border-left: 0;
+        border-right: 0;
+
+      }
+      .main-sider a{
+        margin: 10px;
+      }
+      .main-page a{
+        margin: 10px;
+        margin-left: 0;
+      }
+      select{
+        width: 50px;
+      }
+      .box-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
+      }
+      h2, p{
+        margin: 2px;
+      }
+      span{
+        color: blue;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <section >
+        <div class="mycont">
+        <div class="box box-1">
+            <div class="main-page">
+            <a href="">MainPage</a>
+            <a href="">talk</a>
+        </div>
+            <div class="main-sider">
+            <a href="">Read</a>
+            <a href="">View source</a>
+            <a href="">View history</a>
+            <select>
+                <option value="" disabled selected>Tools</option>
+                <option >General</option>
+                <option >Print/export</option>
+                <option >In other projects</option>
+            </select>
+
+        </div>
+        </div>
+        <div class="box box-2">
+            <h2>Welcome to <span>Wikipedia</span>,</h2>
+            <p>the <span>free encyclopedia</span> that <span>anyone can edit.</span></p>
+            <p><span>125,315</span> active editors</p>
+            <p> <span>6,972,224</span> articles in English</p>
+        </div>
+        <div class="box">From today featured article</div>
+        <div class="box">Todays featured picture</div>
+        <div class="box">Other Areas of wikipedia</div>
+        </div>
+        <aside>sidebar</aside>
+      </section>
+      <div class="header">footer</div>
+    </div>
+  </body>
 </html>
